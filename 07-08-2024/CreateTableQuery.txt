@@ -1,0 +1,48 @@
+---------Create Table : --------
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    PhoneNumber VARCHAR(15),
+    HireDate DATE,
+    JobTitle VARCHAR(50),
+    Salary DECIMAL(10, 2)
+);
+
+
+---------Insert Into : ----------
+
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Email, PhoneNumber, HireDate, JobTitle, Salary)
+VALUES (1, 'Gayatree', 'Lohar', 'gayatrilohar2001@gmail.com', '123-456-7890', '2023-01-15', 'Software Engineer', 75000.00);
+
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Email, PhoneNumber, HireDate, JobTitle, Salary)
+VALUES (2, 'Priya', 'Gorane', 'priya2003@gmail.com', '122-456-7784', '2023-09-15', 'Java Developer', 88000.00);
+
+
+---------Update Data : ----------
+
+UPDATE Employees
+SET Salary = 80000.00
+WHERE EmployeeID = 1;
+
+
+-------Add a new column--------
+
+ALTER TABLE Employees
+ADD Department VARCHAR(50);
+
+
+
+--------------Drop a column--------------
+
+ALTER TABLE Employees
+DROP COLUMN PhoneNumber;
+
+
+----------Select Data from the Table---------
+
+SELECT * FROM Employees;
+
+
