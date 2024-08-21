@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Examples</title>
+    <style>
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #unique-paragraph {
+            font-weight: bold;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Attribute Selector */
+        [type="text"] {
+            border: 1px solid gray;
+        }
+
+        /* Grouping Selector */
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Child Selector */
+        ul > li {
+            list-style-type: square;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /* General Sibling Selector */
+        h2 ~ p {
+            color: green;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            margin-top: 0;
+        }
+
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-size: 1.2em;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Examples</h1>
+    <h2>Heading--</h2>
+    <p id="unique-paragraph" class="highlight">This paragraph has an ID and a class. It will be bold and highlighted.</p>
+    <p>This paragraph will turn green when the mouse hovers over the heading above it. The first line of this text is also slightly larger.</p>
+    <div>
+        <p>This text inside a div is italicized.</p>
+    </div>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <input type="text" placeholder="Type something here...">
+    <a href="#">This link will turn red on hover.</a>
+</body>
+</html>
